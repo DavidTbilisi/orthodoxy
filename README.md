@@ -1,0 +1,2 @@
+# orthodoxy
+Georgian bible sql
