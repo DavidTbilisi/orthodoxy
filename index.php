@@ -26,7 +26,7 @@ echo 'ბოლო ატვირთული: ';
 /************/
 // change after uploading one book
 $ch  = 1;
-$wigni = 'osia';
+$wigni = '1timote';
 $auto = true;
 /************/
 ?>
@@ -49,7 +49,8 @@ $auto = true;
 
 $client = new GuzzleHttp\Client();
 
-$url = 'http://www.orthodoxy.ge/tserili/biblia_sruli/dzveli/'.$wigni.'/'.$wigni.'-' . $ch . '.htm';
+$url = 'http://www.orthodoxy.ge/tserili/biblia_sruli/akhali/'.$wigni.'/'.$wigni.'-' . $ch . '.htm';
+//$url = 'http://www.orthodoxy.ge/tserili/biblia_sruli/akhali/'.$wigni.'/'.$wigni.'.htm';
 echo BR,BR,BR,BR,"<a href='$url' target='_blank'>ბიბლია</a>";
 try{
 $res = $client->request( 'GET', $url);
@@ -107,7 +108,7 @@ function parseToPost (obj) {
 function post(array,obj) {
     axios({
         method: 'post',
-        url:'http://localhost/guzzle/post.php',
+        url:'http://localhost/orthodoxy/post.php',
         data: parseToPost(array[obj]),
         headers: {'Content-Type': 'application/x-www-form-urlencoded'}
     })

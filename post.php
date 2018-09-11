@@ -48,3 +48,33 @@ if(isset($_POST['book'])) {
 }
 
 ?>
+
+<script>
+
+
+
+
+
+
+
+    /*
+    *
+    *
+    * var verseNumb = document.querySelectorAll('.verse-num'),
+     verseT = document.querySelectorAll('.verse')
+     var json = [];
+     verseT.forEach(function (el,id) {
+     var obj = {}
+     obj.id = ++id;
+     obj.text = el.innerHTML;
+     obj.book = 15;
+     obj.chapter = 2;
+     json.push(obj)
+     })
+     console.log(JSON.stringify(json) )
+    *
+    *
+    * */
+
+
+</script>
