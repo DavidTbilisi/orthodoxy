@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8403e12e-0b94-44f6-a00c-faedd79ef7ad" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bible.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/main.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hb.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/comps/modal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/comps/navbar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/comps/verse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/queries.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/save.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/post.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
-    </list>
+    <list default="true" id="8403e12e-0b94-44f6-a00c-faedd79ef7ad" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -418,12 +397,12 @@
       <workItem from="1542612514686" duration="6564000" />
       <workItem from="1542652074150" duration="4021000" />
       <workItem from="1542658726397" duration="4487000" />
-      <workItem from="1542701267178" duration="954000" />
+      <workItem from="1542701267178" duration="1022000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223641000" />
+    <option name="totallyTimeSpent" value="223709000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
