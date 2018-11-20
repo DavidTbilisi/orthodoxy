@@ -145,14 +145,17 @@ class Db {
 		R::store( $teacher );
 	}
 
-	public function manyToMany(  ) {
-//		$helen = R::findOne( $students, 'name = "nana"' );
-//		$cats  = R::findOne( $categories, 'name = "html"' );
-//
-//		$helen->sharedCategoriesList[] = $cats;
-//		$nana->sharedCategoriesList[]  = $cats;
-//
-//		R::storeAll( [ $helen, $nana ] );
+	public function manyToMany( $first, $shared ) {
+		$firstGroup  = R::find( $first[0], $first[1] );
+		$sharedTag   = R::findOne( $shared[0], $shared[1] );
+
+		$ucShared = ucfirst( $shared[0] );
+		$ucShared = "shared{$ucShared}List";
+
+		foreach ($firstGroup as $one):
+		$one->$ucShared[]  = $sharedTag;
+		endforeach;
+		R::storeAll( $firstGroup );
 	}
 
 	private function __clone() {
@@ -163,12 +166,11 @@ class Db {
 }
 
 
-$db         = db::setup( '127.0.0.1', 'manytomany', "root", '' );
-$students   = "students";
-$teachers   = "teachers";
-$categories = "categories";
+$db  = db::setup( '127.0.0.1', 'manytomany', "root", '' );
+$st  = 'students';
+$wd  = 'workdays';
+$crs = 'courses';
 
 
-
-
-
+$megi = R::findOne($st,'name = "მეგი"');
+Helpers::dump($megi->sharedWorkdays);
