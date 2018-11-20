@@ -1,0 +1,6 @@
+node_modules
+.idea
+
+.idea/misc.xml
+.idea/watcherTasks.xml
+.idea/workspace.xml

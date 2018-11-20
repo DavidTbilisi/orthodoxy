@@ -1,6 +1,7 @@
 {
   "require": {
     "guzzlehttp/guzzle": "6.*",
-    "envms/fluentpdo": "1.1.*"
+    "envms/fluentpdo": "1.1.*",
+    "underscore/underscore.php": "dev-master"
   }
 }

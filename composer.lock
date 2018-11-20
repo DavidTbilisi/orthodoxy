@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2d238439b1583400499deeebf4712be9",
+    "content-hash": "7d4a6577ef545a6a6f98a8345a862c01",
     "packages": [
         {
             "name": "envms/fluentpdo",
@@ -282,12 +282,51 @@
                 "response"
             ],
             "time": "2016-08-06T14:39:51+00:00"
+        },
+        {
+            "name": "underscore/underscore.php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ActiveObject/Underscore.php.git",
+                "reference": "1801b881c2596e9d95ca6628fb62db882f16aa7d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ActiveObject/Underscore.php/zipball/1801b881c2596e9d95ca6628fb62db882f16aa7d",
+                "reference": "1801b881c2596e9d95ca6628fb62db882f16aa7d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "underscore.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Underscore.php is a PHP port of Underscore.js.",
+            "homepage": "http://brianhaveri.github.com/Underscore.php",
+            "keywords": [
+                "functional",
+                "underscore",
+                "util"
+            ],
+            "abandoned": "anahkiasen/underscore-php",
+            "time": "2012-05-08T22:12:27+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "underscore/underscore.php": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

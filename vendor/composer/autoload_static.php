@@ -45,11 +45,16 @@ class ComposerStaticInita0eb3158696d74bf5bb4d5d999e34756
         ),
     );
 
+    public static $classMap = array (
+        '__' => __DIR__ . '/..' . '/underscore/underscore.php/underscore.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInita0eb3158696d74bf5bb4d5d999e34756::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInita0eb3158696d74bf5bb4d5d999e34756::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInita0eb3158696d74bf5bb4d5d999e34756::$classMap;
 
         }, null, ClassLoader::class);
     }

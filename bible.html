@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="root">
+    <input type="text" placeholder="book">
+    <input type="text" placeholder="chapter">
+
+
+</div>
+
+<script src="./node_modules/vue/dist/vue.js"></script>
+<script>
+
+    function ajax(url, obj) {
+        obj.method = obj.method || "GET";
+        obj.headers = obj.headers || {};
+        obj.data = obj.data || '';
+
+
+        return new Promise((yes, no) => {
+            let xhr;
+            if (window.XMLHttpRequest) {
+                xhr = new XMLHttpRequest();
+            } else {
+                xhr = new ActiveXObject('Microsoft.XMLHTTP');
+            }
+
+            xhr.addEventListener('load', yes(xhr));
+            xhr.addEventListener("error", no(xhr));
+            xhr.open(obj.method, url);
+            xhr.send(obj.data);
+        })
+    }
+    ajax("bible.json", {method: "GET"})
+        .then(r => {
+            console.log(r.responseText)
+        })
+        .catch(err => {
+            console.log(err)
+        });
+
+</script>
+</body>
+</html>
